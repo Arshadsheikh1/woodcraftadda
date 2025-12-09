@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WUDCRAFTADDA | Plywood, Laminates & Hardware</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <span>FREE SHIPPING ON ORDERS ABOVE ₹50,000</span>
+      <div class="top-bar-links">
+        <a href="#">Help</a>
+        <a href="#">Track Order</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-main">WUDCRAFT</span><span class="logo-sub">ADDA</span>
+      </div>
+
+      <div class="search-area">
+        <div class="category-select">
+          <select>
+            <option>Select Category</option>
+            <option>Plywood</option>
+            <option>Laminates</option>
+            <option>Hardware</option>
+            <option>Veneers</option>
+            <option>Doors</option>
+            <option>Glue</option>
+            <option>Edge Banding</option>
+            <option>Kitchen Baskets</option>
+          </select>
+        </div>
+        <input type="text" placeholder="Search for plywood, laminates, hardware..." />
+        <button class="btn primary">Search</button>
+      </div>
+
+      <div class="header-actions">
+        <a href="login.html" class="header-link">Login / Register</a>
+        <a href="cart.html" class="icon-pill">Wishlist (0)</a>
+        <a href="cart.html" class="icon-pill cart-pill">Cart (0) — ₹0.00</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        ☰
+      </button>
+    </div>
+
+    <!-- Nav -->
+    <nav class="main-nav" id="mainNav">
+      <div class="container nav-inner">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="plwood.html">Plywood</a></li>
+          <li><a href="laminates.html">Laminates</a></li>
+          <li><a href="harware.html">Hardware</a></li>
+          <li><a href="plwood.html">Veneers</a></li>
+          <li><a href="doors.html">Doors</a></li>
+          <li><a href="#">Glue</a></li>
+          <li><a href="#">Edge Banding</a></li>
+          <li><a href="#">Kitchen Baskets</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Slider -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-slider" id="heroSlider">
+        <!-- Slide 1 -->
+        <div class="hero-slide active">
+          <div class="hero-text">
+            <p class="hero-tag">HIGH STRENGTH & DURABILITY</p>
+            <h1>Premium Plywood & Laminates for Modern Interiors</h1>
+            <p class="hero-desc">
+              Buy trusted brands of plywood, laminates, veneers and hardware at one place.
+              Perfect for interior designers, contractors and homeowners.
+            </p>
+            <div class="hero-actions">
+              <button class="btn primary">Shop Plywood</button>
+              <button class="btn ghost">View All Categories</button>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="hero-img-placeholder">
+              WUDCRAFTADDA<br />Plywood Collections
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+       <div class="hero-slide">
+          <div class="hero-text">
+            <p class="hero-tag">LAMINATES & VENEERS</p>
+            <h1>Stylish Finishes to Match Your Dream Space</h1>
+            <p class="hero-desc">
+              Explore a wide range of laminates and veneers in different textures, colours and designs.
+            </p>
+            <div class="hero-actions">
+              <button class="btn primary">Browse Laminates</button>
+              <button class="btn ghost">Talk to Expert</button>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="hero-img-placeholder">
+              WUDCRAFTADDA<br />Laminates & Veneers
+            </div>
+          </div>
+       </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide">
+          <div class="hero-text">
+            <p class="hero-tag">HARDWARE & ACCESSORIES</p>
+            <h1>Quality Fittings for Your Modular Furniture</h1>
+            <p class="hero-desc">
+              Hinges, channels, baskets and more — everything you need to finish your project smoothly.
+            </p>
+            <div class="hero-actions">
+              <button class="btn primary">Explore Hardware</button>
+              <button class="btn ghost">View Offers</button>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="hero-img-placeholder">
+              WUDCRAFTADDA<br />Hardware Range
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-dots" id="heroDots">
+        <button class="dot active" data-slide="0"></button>
+        <button class="dot" data-slide="1"></button>
+        <button class="dot" data-slide="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Categories -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Top Categories</h2>
+        <p>Shop by category to quickly find products for your next project.</p>
+      </div>
+      <div class="category-grid">
+        <a href="plwood.html" class="category-card">
+          <div class="category-img"> <img src="imgs/tc1.webp" alt="plywood"></div>
+          <div class="category-info">
+            <h3>Plywood</h3>
+            <p>18 Items</p>
+          </div>
+        </a>
+        <a href="laminates.html" class="category-card">
+          <div class="category-img"> <img src="imgs/tc2.jpg" alt="lamintes"></div>
+          <div class="category-info">
+            <h3>Laminates</h3>
+            <p>1200+ Designs</p>
+          </div>
+        </a>
+        <a href="plwood.html" class="category-card">
+          <div class="category-img">  <img src="imgs/tc3.jfif"></div>
+          <div class="category-info">
+            <h3>Veneers</h3>
+            <p>80+ Shades</p>
+          </div>
+        </a>
+        <a href="harware.html" class="category-card">
+          <div class="category-img"> <img src="imgs/tc4.jpg" alt="hardware" ></div>
+          <div class="category-info">
+            <h3>Hardware</h3>
+            <p>40+ Products</p>
+          </div>
+        </a>
+        <a href="doors.html" class="category-card">
+          <div class="category-img"> <img src="imgs/tc5.webp"></div>
+          <div class="category-info">
+            <h3>Doors</h3>
+            <p>Ready-made & Flush</p>
+          </div>
+        </a>
+        <a href="harware.html" class="category-card">
+          <div class="category-img"> <img src="imgs/tc6.jfif"></div>
+          <div class="category-info">
+            <h3>Kitchen Baskets</h3>
+            <p>Modular Solutions</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sale Products -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header">
+        <h2>Sale Products</h2>
+        <p>Grab discounts on popular plywood, laminates and hardware.</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="badge badge-sale">-25% OFF</div>
+          <div class="product-img"><img src="imgs/sp1.png"></div>
+          <h3>Waterproof Plywood 19mm</h3>
+          <p class="product-price">
+            <span class="old-price">₹3,200.00</span>
+            <span class="new-price">₹2,400.00</span>
+          </p>
+          <button onclick="Addtocart" class="btn full-width">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="badge badge-sale">-30% OFF</div>
+          <div class="product-img"><img src="imgs/sp2.jpg"></div>
+          <h3>Premium Laminate Sheet</h3>
+          <p class="product-price">
+            <span class="old-price">₹1,500.00</span>
+            <span class="new-price">₹1,050.00</span>
+          </p>
+          <button class="btn full-width">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="badge badge-sale">-18% OFF</div>
+          <div class="product-img"><img src="iimgs/sp3.jpg"></div>
+          <h3>Soft Close Hydraulic Hinge</h3>
+          <p class="product-price">
+            <span class="old-price">₹380.00</span>
+            <span class="new-price">₹310.00</span>
+          </p>
+          <button class="btn full-width">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="badge badge-sale">-20% OFF</div>
+          <div class="product-img"> <img src="imgs/sp4.jfif" ></div>
+          <h3>Exterior Grade Door</h3>
+          <p class="product-price">
+            <span class="old-price">₹6,500.00</span>
+            <span class="new-price">₹5,200.00</span>
+          </p>
+          <button class="btn full-width">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose WOODCRAFTADDA?</h2>
+        <p>End-to-end support from selection to delivery.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-number">1</span>
+          <h3>Prefer a Call?</h3>
+          <p>Call us on +91-7037712898 and our team will help you pick the right materials.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number">2</span>
+          <h3>Get Expert Advice</h3>
+          <p>Share your site photos or drawings and our experts will guide you on specs.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number">3</span>
+          <h3>Order Online</h3>
+          <p>Confirm quantities and place your order securely from anywhere.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number">4</span>
+          <h3>Quick Delivery</h3>
+          <p>We coordinate with transport to deliver safely to your location.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Products -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header">
+        <h2>Popular Products</h2>
+        <p>Frequently ordered by interior designers and contractors.</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-img"> <img src="imgs/pp1.avif"></div>
+          <h3>Marine Grade Plywood</h3>
+          <p class="product-price">
+            <span class="new-price">From ₹3,900.00</span>
+          </p>
+          <button class="btn full-width">View Options</button>
+        </div>
+        <div class="product-card">
+          <div class="product-img"><img src="imgs/pp2.jpg"></div>
+          <h3>High Gloss Laminate</h3>
+          <p class="product-price">
+            <span class="new-price">From ₹1,350.00</span>
+          </p>
+          <button class="btn full-width">View Options</button>
+        </div>
+        <div class="product-card">
+          <div class="product-img"><img src="imgs/pp3.jfif"></div>
+          <h3>Decorative Veneer Sheet</h3>
+          <p class="product-price">
+            <span class="new-price">From ₹1,750.00</span>
+          </p>
+          <button class="btn full-width">View Options</button>
+        </div>
+        <div class="product-card">
+          <div class="product-img"><img src="imgs/pp4.jpg"></div>
+          <h3>Soft Close Drawer Channel</h3>
+          <p class="product-price">
+            <span class="new-price">From ₹420.00</span>
+          </p>
+          <button class="btn full-width">View Options</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Banners -->
+  <section class="section">
+    <div class="container promo-grid">
+      <div class="promo-card">
+        <div class="promo-text">
+          <p class="promo-tag">NEW ARRIVALS</p>
+          <h3>Latest Laminate Collections</h3>
+          <p>Trendy colours and textures for wardrobes, kitchens and TV units.</p>
+          <button class="btn ghost">View Collection</button>
+        </div>
+      </div>
+      <div class="promo-card promo-dark">
+        <div class="promo-text">
+          <p class="promo-tag">UP TO 30% OFF</p>
+          <h3>Contractor Bulk Orders</h3>
+          <p>Special pricing for bulk plywood and laminate orders.</p>
+          <button class="btn primary">Get Quote</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <div class="logo footer-logo">
+          <span class="logo-main">WOODCRAFT</span><span class="logo-sub">ADDA</span>
+        </div>
+        <p class="footer-text">
+          Your one-stop destination for plywood, laminates, veneers and furniture hardware.
+        </p>
+        <p class="footer-text">
+          Address: Plot No. 10, Industrial Area, Hyderabad, India
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">All Categories</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Support</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Stay Updated</h4>
+        <p class="footer-text">Subscribe for offers & new arrivals.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" />
+          <button class="btn primary full-width" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year"></span> WOODCRAFTADDA. All rights reserved.</p>
+        <p>Designed for demo / frontend use only.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+function AddToCart(name, price) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.push({
+        productName: name,
+        productPrice: price,
+        qty: 1
+    });
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert("Product added to cart!");
+}
+</script>
+
+</body>
+</html>
+

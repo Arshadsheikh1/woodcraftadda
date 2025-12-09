@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cart - WUDCRAFT ADDA</title>
+<style>
+    body{
+        font-family: Arial;
+        background:#f5f7fa;
+        padding:20px;
+    }
+    h2{
+        text-align:center;
+    }
+    table{
+        width:90%;
+        margin:auto;
+        border-collapse:collapse;
+        background:white;
+        border-radius:10px;
+        overflow:hidden;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+    th, td{
+        padding:15px;
+        text-align:center;
+        border-bottom:1px solid #eee;
+    }
+    th{
+        background:#007bff;
+        color:white;
+    }
+    .checkout{
+        display:block;
+        margin:25px auto;
+        width:200px;
+        padding:12px;
+        background:green;
+        color:white;
+        border:none;
+        font-size:18px;
+        border-radius:8px;
+        cursor:pointer;
+    }
+</style>
+</head>
+<body>
+
+<h2>Your Cart</h2>
+
+<table id="cartTable">
+    <tr>
+        <th>Product</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Total</th>
+    </tr>
+</table>
+
+<button class="checkout">Proceed to Checkout</button>
+
+<script>
+function loadCart() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let table = document.getElementById("cartTable");
+
+    cart.forEach(item => {
+        let row = document.createElement("tr");
+
+        row.innerHTML = `
+            <td>${item.productName}</td>
+            <td>${item.qty}</td>
+            <td>₹${item.productPrice}</td>
+            <td>₹${item.productPrice * item.qty}</td>
+        `;
+
+        table.appendChild(row);
+    });
+}
+
+loadCart();
+</script>
+
+</body>
+</html>
+ 
+
